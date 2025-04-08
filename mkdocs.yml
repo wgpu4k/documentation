@@ -1,7 +1,7 @@
 site_name: wgpu4k documentation
 site_url: https://mydomain.org/mysite
 site_description: Documentation and getting started guide for wgpu4k, a Kotlin binding for WebGPU
-repo_url: https://github.com/wgpu4k/documentation
+repo_url: https://github.com/wgpu4k/wgpu4k
 theme:
   logo: https://avatars.githubusercontent.com/u/163670885?s=48&v=4
   name: material
