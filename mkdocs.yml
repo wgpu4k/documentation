@@ -1,5 +1,7 @@
 site_name: wgpu4k documentation
 site_url: https://mydomain.org/mysite
+site_description: Documentation and getting started guide for wgpu4k, a Kotlin binding for WebGPU
+repo_url: https://github.com/wgpu4k/documentation
 theme:
   logo: https://avatars.githubusercontent.com/u/163670885?s=48&v=4
   name: material
@@ -25,3 +27,14 @@ theme:
         icon: material/brightness-4
         name: Switch to system preference
 
+nav:
+  - Getting Started: index.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
