@@ -29,6 +29,8 @@ theme:
 
 nav:
   - Getting Started: index.md
+  - Architecture: architecture.md
+  - Supported platform: supported-platform.md
 
 markdown_extensions:
   - pymdownx.highlight:

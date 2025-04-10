@@ -39,3 +39,8 @@ kotlin-ide/
 .kotlin/
 .teamcity/
 .npmrc
+/lib/
+/p/
+/include/
+/bin/
+/pyvenv.cfg
