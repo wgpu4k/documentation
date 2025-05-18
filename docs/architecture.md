@@ -1,6 +1,16 @@
-# wgpu4k Architecture Overview
+# wgpu4k Architecture Overview & Supported Platforms
 
 wgpu4k is a Kotlin Multiplatform library that provides a unified interface to WebGPU and native graphics APIs across multiple platforms.
+
+## Framework Components
+
+This project provide different flavor regarding your need
+
+- [wgpu4k](https://github.com/wgpu4k/wgpu4k) Provide high order binding to cover all platforms including browser
+- [wgpu4k toolkit](https://github.com/wgpu4k/wgpu4k) Provide the glue to create windows and a context easily, do not use this project of you want to manage that youself.
+- [wgpu4k native](https://github.com/wgpu4k/wgpu4k-native) Provide native low level binding to cover only Linux/MacOS/Windows/Android/iOS platforms
+- [webgpu ktypes](https://github.com/wgpu4k/webgpu-ktypes) Generated interfaces from the WebGPU specifications, this is the base of wgpu4k implementation, but can be reused to create a custom binding, for example with a backend like Dawn
+- [webgpu ktypes WEB](https://github.com/wgpu4k/webgpu-ktypes) Generated web binding from the WebGPU specifications supporting kotlin/JS and kotlin/WasmJS with a common API.
 
 ## Architecture Components
 
