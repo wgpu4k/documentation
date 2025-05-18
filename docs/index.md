@@ -34,19 +34,20 @@ capabilities.
 
 For those who want to get started immediately, check out our [Quickstart Guide](quickstart.md).
 
-## Next Steps
+## Core Libraries
 
-Now that you're familiar with the basics of wgpu4k, you can:
+- [wgpu4k](https://github.com/wgpu4k/wgpu4k) - High-level WebGPU binding compatible with all platforms, including browsers.
+- [wgpu4k-toolkit](https://github.com/wgpu4k/wgpu4k-toolkit) - Utilities for easily creating windows and WebGPU context. Avoid if you prefer to manage these aspects yourself.
 
-- Explore more advanced rendering techniques
-- Learn about textures and samplers
-- Implement more complex shaders
-- Create interactive applications
+## Foundation Libraries
 
-Check out the API reference for detailed information about all available classes and methods.
+- [webgpu-ktypes](https://github.com/wgpu4k/webgpu-ktypes) - Interfaces generated from WebGPU specifications. Serves as the foundation for wgpu4k implementation, but can be reused to create custom bindings (e.g., with a backend like Dawn).
+- [webgpu-ktypes-web](https://github.com/wgpu4k/webgpu-ktypes-web) - Web binding generated from WebGPU specifications, supporting kotlin/JS and kotlin/WasmJS through a common API.
+- [wgpu4k-native](https://github.com/wgpu4k/wgpu4k-native) - Low-level native binding for Linux/macOS/Windows/Android/iOS.
 
 ## Resources
 
+- [Examples using wgpu4k](https://github.com/wgpu4k/wgpu4k-samples.git)
 - [WebGPU Specification](https://www.w3.org/TR/webgpu/)
 - [WebGPU Shading Language (WGSL) Specification](https://www.w3.org/TR/WGSL/)
 - [wgpu4k GitHub Repository](https://github.com/wgpu4k/wgpu4k)
