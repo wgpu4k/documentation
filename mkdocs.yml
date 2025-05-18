@@ -1,0 +1,42 @@
+site_name: wgpu4k documentation
+site_url: https://mydomain.org/mysite
+site_description: Documentation and getting started guide for wgpu4k, a Kotlin binding for WebGPU
+repo_url: https://github.com/wgpu4k/wgpu4k
+theme:
+  logo: https://avatars.githubusercontent.com/u/163670885?s=48&v=4
+  name: material
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+nav:
+  - Getting Started: index.md
+  - Quick Start: quickstart.md
+  - Architecture & Supported platform: architecture.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
