@@ -35,7 +35,7 @@ wgpu4k provides native implementations for various operating systems:
 
 #### macOS (JVM + Native)
 - Metal (primary)
-- 
+
 #### iOS
 - Metal (primary)
 
