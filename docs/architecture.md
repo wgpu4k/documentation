@@ -6,7 +6,7 @@ wgpu4k is a Kotlin Multiplatform library that provides a unified interface to We
 
 The architecture consists of three main layers:
 
-1. **Application Layer (Kotlin)**
+1. **Binding Layer (Kotlin)**
 2. **GPU Abstraction Layer**
 3. **Platform-Specific Backends**
 
@@ -29,14 +29,17 @@ The WebGPU standard ensures consistent behavior across all supported browsers wh
 
 wgpu4k provides native implementations for various operating systems:
 
-#### Linux
+#### Linux (JVM)
 - Vulkan (primary)
 - OpenGL (fallback)
 
-#### macOS
+#### macOS (JVM + Native)
+- Metal (primary)
+- 
+#### iOS
 - Metal (primary)
 
-#### Windows
+#### Windows (JVM)
 - DirectX 12 (primary)
 - Vulkan (alternative)
 - OpenGL (fallback)
